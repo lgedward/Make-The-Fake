@@ -143,6 +143,9 @@ class Play extends Phaser.Scene {
         if (!this.finished){
             player.setVelocityX(100);
         }
+        else {
+            player.setVelocity(0);
+        }
         player.x = Phaser.Math.Clamp(player.x, player.width / 2, game.config.width - player.width / 2);
         player.y = Phaser.Math.Clamp(player.y, player.height / 2, game.config.height - player.height / 2);
     }
